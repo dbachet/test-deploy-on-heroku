@@ -1,0 +1,6 @@
+<form {{action 'create' on='submit'}} {{bind-attr class="hasErrors"}}>
+  {{input valueBinding='content' id='content' placeholder='Type in your message' type='text'}}
+  <button id="btn-save-post" {{action 'create'}}>
+    Envoyer
+  </button>
+</form>
