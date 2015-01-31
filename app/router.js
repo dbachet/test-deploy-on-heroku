@@ -6,7 +6,7 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.resource('posts', {path: '/'}, function() {
+  this.resource('mailing-list-recipients', {path: '/'}, function() {
     this.route('new', {path: '/'});
   });
 });

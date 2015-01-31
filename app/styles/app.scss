@@ -1,1 +1,112 @@
-body { background: blue }
+@import 'shared_sass.scss';
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+
+html
+
+body {
+  margin: 20px;
+  color: #34495e;
+  background-image: url("/assets/images/background.jpg");
+  // background-size: auto 100%;
+  // background-position: right;
+  background-size: 100%;
+}
+
+a.home-link {
+  .logo {
+    width: 70%;
+  }
+}
+
+section#description {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 1.9em;
+}
+
+div#top-frame {
+  width: 100%;
+  // background: white;
+  margin-top: 30px;
+  .notify-me {
+    text-align: center;
+    font-size: 0.7em;
+    margin: 20px 0;
+  }
+
+  input#email,
+  #btn-save-mailing-list-recipient {
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    background-image: none;
+    border: none;
+    border-radius: none;
+    -webkit-border-radius: none;
+    -webkit-appearance: none;
+    &:focus {
+      outline:none;
+      -moz-box-shadow: none !important;
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important;
+    }
+  }
+
+  input#email {
+    color: #555;
+    background-color: rgba(134, 225, 142, 0.15);
+    width: 70%;
+  }
+
+  #btn-save-mailing-list-recipient {
+    background-color: #54bd71;
+    width: 25%;
+  }
+
+  #landing-page {
+    padding: 20px 0 10px;
+    form.has-errors {
+      ul { list-style: none;}
+      input {
+        border: 1px solid red;
+      }
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  padding-top: 10px;
+  font-weight: 200;
+  a { color: #34495e; }
+  a:hover {
+    text-decoration: none;
+    color: #34495e;
+  }
+  .copyright { font-size: 0.7em; }
+}
+
+/* This gets Google to fall into place */
+.social-share {
+  font-size: 1px;
+  margin-bottom: 20px;
+}
+
+/* This gets Facebook to fall into place */
+.social-share iframe {
+  vertical-align: baseline;
+
+}
+.fb-share-button{
+ margin-right:20px;
+}
+/* Set an optional width for your button wrappers */
+.social-share span {
+  display: inline-block;
+  width: 110px;
+}
+
+/* Adjust the widths individually if you like */
+.social-share .google {
+  width: 75px;
+}
