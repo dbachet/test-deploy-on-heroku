@@ -15,5 +15,9 @@
     "qunit": "~1.17.1",
     "bootstrap": "~3.3",
     "ember-addons.bs_for_ember": "~0.7.0"
-  }
+  },
+  "resolutions": {
+    "ember": "1.10.0-beta.4",
+    "handlebars": "2.0.0"
+   }
 }
