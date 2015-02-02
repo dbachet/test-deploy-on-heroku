@@ -3,7 +3,6 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   actions: {
     create: function() {
-      // alert('YEAH');
       var self = this;
       var mailingListRecipient = self.store.createRecord("mailing-list-recipient",
       {
