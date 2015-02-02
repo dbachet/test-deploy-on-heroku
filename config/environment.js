@@ -20,7 +20,7 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
-    ENV.API_URL = 'http://localhost:3000';
+    ENV.API_URL = "http://localhost:3000";
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
@@ -41,7 +41,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.API_URL = 'https://changeons-backend.herokuapp.com/';
+    ENV.API_URL = "https://changeons-staging.herokuapp.com";
   }
 
   return ENV;
